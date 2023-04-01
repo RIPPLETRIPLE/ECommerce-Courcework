@@ -45,24 +45,6 @@
                 </select>
             </div>
             <div>
-                <h4><fmt:message key="size" bundle="${bundle}"/></h4>
-                <select name="size">
-                    <option value="" selected><fmt:message key="choose_option" bundle="${bundle}"/></option>
-                    <c:forEach items="${requestScope.sizes}" var="item">
-                    <option id="${item.size}" name="filterParam" value="${item.id}">${item.size}</option>
-                        </c:forEach>
-                </select>
-            </div>
-            <div>
-                <h4><fmt:message key="sex" bundle="${bundle}"/></h4>
-                <select name="sex">
-                    <option value="" selected><fmt:message key="choose_option" bundle="${bundle}"/></option>
-                    <option id="male" name="filterParam" value="Male"><fmt:message key="male" bundle="${bundle}"/></option>
-                    <option id="female" name="filterParam" value="Female"><fmt:message key="female" bundle="${bundle}"/></option>
-                    <option id="unisex" name="filterParam" value="Unisex"><fmt:message key="unisex" bundle="${bundle}"/></option>
-                </select>
-            </div>
-            <div>
                 <button type="submit"
                         class="btn btn-sm btn-primary"><fmt:message key="filter"
                                                                     bundle="${bundle}"/></button>

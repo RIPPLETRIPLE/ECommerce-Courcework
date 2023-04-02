@@ -40,7 +40,7 @@
                             ${order.product.category.name}
                     </td>
                     <td class="price">
-                            ${pageContext.request.getSession(false).getAttribute("lang") == 'ukr' ? 26 * order.product.price * order.quantity : order.product.price * order.quantity}
+                            ${pageContext.request.getSession(false).getAttribute("lang") == 'ukr' ? 40 * order.product.price * order.quantity : order.product.price * order.quantity}
                         <fmt:message key="currency" bundle="${bundle}"/>
                     </td>
                     <td>

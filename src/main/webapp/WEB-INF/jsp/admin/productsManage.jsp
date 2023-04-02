@@ -53,7 +53,7 @@
                             ${product.category.name}
                     </td>
                     <td class="price">
-                            ${pageContext.request.getSession(false).getAttribute("lang") == 'ukr' ? 26 * product.price : product.price}
+                            ${pageContext.request.getSession(false).getAttribute("lang") == 'ukr' ? 40 * product.price : product.price}
                         <fmt:message key="currency" bundle="${bundle}"/>
                     </td>
                     <td>

@@ -94,7 +94,7 @@
                             <h1 class="id" hidden>${product.id}</h1>
                             <h5 class="card-title">${product.name}</h5>
                             <h6><fmt:message key="price" bundle="${bundle}"/>:
-                                <span class="price">${pageContext.request.getSession(false).getAttribute("lang") == 'ukr' ? 26 * product.price : product.price}</span>
+                                <span class="price">${pageContext.request.getSession(false).getAttribute("lang") == 'ukr' ? 40 * product.price : product.price}</span>
                                 <fmt:message key="currency" bundle="${bundle}"/></h6>
                             <div class="mt-3 d-flex justify-content-between">
                                 <form method="post"

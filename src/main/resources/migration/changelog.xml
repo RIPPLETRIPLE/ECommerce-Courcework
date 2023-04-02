@@ -3,11 +3,11 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
-    <changeSet id="createDB" author="me">
+    <changeSet id="createDB" author="me" failOnError="false">
         <sqlFile path="migration/initDB.sql"/>
     </changeSet>
 
-    <changeSet id="initDB" author="me">
+    <changeSet id="initDB" author="me" failOnError="false">
         <sqlFile path="migration/defaultData.sql"/>
     </changeSet>
 
